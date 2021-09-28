@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/form.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <header>
+        <img src= "https://i.pinimg.com/originals/0f/cd/fb/0fcdfb03e064f40e6de5e055e2c371d0.png" alt="Escudo do Trujillo">
+        <h2> La Libertad - Trujillo </h2>
+    </header>
+    
+    <main class="container">
+    <form action="#" method="POST">
+    
+    <fieldset class="dados">
+        <legend>DATOS PESSOAIS</legend>
+
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" required maxlength="100">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <label for="telefone">Telefone</label>
+        <input type="number" name="telefone" id="telefone">
+        
+    </fieldset>
+
+    <fieldset>
+    <legend>SUA IDADE</legend>
+
+        <label for="nascimento">Data de nascimento</label>
+        <input type="date" name="nascimento" id="nascimento">
+
+        <div class="idade">
+        <input type="radio" name="idade" id="menor">
+        <label for="menor">Menor de 18</label>
+        <input type="radio" name="idade" id="maior" checked>
+        <label for="maior">Maior de 18</label>
+        </div>
+    </fieldset>
+    
+    <fieldset>
+        <legend>A CIUDADE</legend>
+        <select name="interesse" id="interesse">
+            <optgroup label= "Pontos de Interesse">
+            <option value="" hidden>Selecione uma opção</option>
+            <option value="CHANCHAN">Chan Chan</option>
+            <option value="Huanchaco">Huanchaquito</option>
+            <option value="Huacas">La Huaca del Sol y la Luna</option>
+            </optgroup>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>MOTIVO DE INTERESSE (OPCIONAL)</legend>
+        <div class="opcional">
+            <input type="checkbox" name="motivo" id="turista">
+            <label for="turista">Turista</label>
+            <input type="checkbox" name="motivo" id="residente">
+            <label for="residente">Residente</label>
+            <input type="checkbox" name="motivo" id="estudiante">
+            <label for="estudiante">Estudiante</label>
+        </div>
+    </fieldset>
+
+        <button type="submit">Registrarse</button>
+        <button type="reset">Cancelar</button>
+
+        </form>
+
+    </main>
+    
+</body>
+
+</html>
